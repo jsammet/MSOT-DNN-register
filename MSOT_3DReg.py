@@ -57,7 +57,7 @@ class MSOT_3DReg(nn.Module):
 
         # ensure correct dimensionality
         ndims = len(inshape)
-        assert ndims in [3], 'ndims should be one of 1, 2, or 3. found: %d' % ndims
+        assert ndims in [3], 'ndims should be 3. found: %d' % ndims
         
         # configure core unet model
         self.unet_model = Seg_UNet()
